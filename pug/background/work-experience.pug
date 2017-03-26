@@ -17,12 +17,6 @@ unless _.isEmpty(resume.work)
                 hr
 
               p.clear-margin.relative
-                if !experience.endDate
-                  i.icon-circle.current-event(
-                    rel="tooltip",
-                    title="Currently Working",
-                    data-placement="left"
-                  )
                 strong= experience.position
                 if experience.company
                   |,&nbsp;
