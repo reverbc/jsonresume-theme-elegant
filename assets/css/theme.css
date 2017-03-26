@@ -24,6 +24,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+hr.dashed-hr {
+    border: 1px dashed #eee;
+    background: white;
+}
 .icon-instagram:before {
   content: "\e905";
 }
