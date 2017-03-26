@@ -121,6 +121,8 @@ function render(resume) {
     });
 
     _.each(resume.education, function(education_info) {
+        education_info.summary = convertMarkdown(education_info.summary);
+
         _.each(['startDate', 'endDate'], function(type) {
             var date = education_info[type];
 

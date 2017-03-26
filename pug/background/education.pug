@@ -28,6 +28,8 @@ unless _.isEmpty(resume.education)
                   small
                     |#{education_info.startDate} - #{education_info.endDate || 'Present'}
                 i= education_info.gpa
+                
+                .mop-wrapper.space-bottom!= education_info.summary
 
                 unless _.isEmpty(education_info.courses)
                   .space-top.labels
