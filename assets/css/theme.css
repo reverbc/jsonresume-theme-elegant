@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?9yug7q');
-  src:  url('fonts/icomoon.eot?9yug7q#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?9yug7q') format('truetype'),
-    url('fonts/icomoon.woff?9yug7q') format('woff'),
-    url('fonts/icomoon.svg?9yug7q#icomoon') format('svg');
+  src:  url('//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.eot?9yug7q');
+  src:  url('//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.eot?9yug7q#iefix') format('embedded-opentype'),
+    url('//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.ttf?9yug7q') format('truetype'),
+    url('//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.woff?9yug7q') format('woff'),
+    url('//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.svg?9yug7q#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
