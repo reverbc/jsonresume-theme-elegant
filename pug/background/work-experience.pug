@@ -19,11 +19,12 @@ unless _.isEmpty(resume.work)
                     data-placement="left"
                   )
                 strong= experience.position
-                |,&nbsp;
-                if experience.website
-                  a(href=experience.website, target="_blank")= experience.company
-                else
-                  |#{experience.company}
+                if experience.company
+                  |,&nbsp;
+                  if experience.website
+                    a(href=experience.website, target="_blank")= experience.company
+                  else
+                    |#{experience.company}
 
               p.text-muted
                 small
