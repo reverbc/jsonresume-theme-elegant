@@ -44,6 +44,7 @@ function getFloatingNavItems(resume) {
         {label: 'Education', target: 'education', icon: 'graduation-cap', requires: 'education'},
         {label: 'Awards', target: 'awards', icon: 'trophy', requires: 'awards'},
         {label: 'Volunteer Work', target: 'volunteer-work', icon: 'child', requires: 'volunteer'},
+        {label: 'Certificates', target: 'certificates', icon: 'trophy', requires: 'certificates'},
         {label: 'Publications', target: 'publications', icon: 'newspaper', requires: 'publications'},
         {label: 'Interests', target: 'interests', icon: 'heart', requires: 'interests'},
         {label: 'References', target: 'references', icon: 'thumbs-up', requires: 'references'}
@@ -153,6 +154,16 @@ function render(resume) {
         volunteer_info.highlights = _(volunteer_info.highlights).map(function(highlight) {
             return convertMarkdown(highlight);
         });
+    });
+
+    _.each(resume.certificates, function(certificate) {
+        var date = certificate.date;
+
+        certificate.summary = convertMarkdown(certificate.summary);
+
+        if (date) {
+            certificate.date = utils.getFormattedDate(date, 'MMM, YYYY');
+        }
     });
 
     _.each(resume.publications, function(publication_info) {
