@@ -41,3 +41,8 @@ unless _.isEmpty(resume.work)
                 ul
                   each highlight in experience.highlights
                     li.mop-wrapper!= highlight
+
+              unless _.isEmpty(experience.keywords)
+                .space-top.labels
+                  each keyword in experience.keywords
+                    span.label.label-keyword= keyword
