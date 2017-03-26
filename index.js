@@ -136,7 +136,7 @@ function render(resume) {
         award.summary = convertMarkdown(award.summary);
 
         if (date) {
-            award.date = utils.getFormattedDate(date, 'MMM DD, YYYY');
+            award.date = utils.getFormattedDate(date, 'MMM, YYYY');
         }
     });
 
