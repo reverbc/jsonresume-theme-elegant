@@ -44,7 +44,7 @@ function getFloatingNavItems(resume) {
         {label: 'Education', target: 'education', icon: 'graduation-cap', requires: 'education'},
         {label: 'Awards', target: 'awards', icon: 'trophy', requires: 'awards'},
         {label: 'Volunteer Work', target: 'volunteer-work', icon: 'child', requires: 'volunteer'},
-        {label: 'Certificates', target: 'certificates', icon: 'trophy', requires: 'certificates'},
+        {label: 'Certificates', target: 'certificates', icon: 'board', requires: 'certificates'},
         {label: 'Publications', target: 'publications', icon: 'newspaper', requires: 'publications'},
         {label: 'Interests', target: 'interests', icon: 'heart', requires: 'interests'},
         {label: 'References', target: 'references', icon: 'thumbs-up', requires: 'references'}
