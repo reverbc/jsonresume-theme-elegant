@@ -345,6 +345,7 @@ body {
 }
 .background-details .detail {
   display: table;
+  margin-bottom: 20px;
 }
 .background-details .detail .icon {
   min-width: 45px;
