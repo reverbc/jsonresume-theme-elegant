@@ -13,8 +13,13 @@ unless _.isEmpty(resume.certificates)
             li.card.card-nested
               .content
                 p.clear-margin(itemprop="certificate")
-                  strong= certificate.title + " "
-                  |#{certificate.issuer}
+                  if certificate.website
+                    strong
+                      a(href=certificate.website, target="_blank")= certificate.title
+                  else
+                    strong= certificate.title
+
+                  |, #{certificate.issuer}
 
                 p.text-muted
                   small
