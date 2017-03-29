@@ -6,15 +6,16 @@ unless _.isEmpty(resume.work)
 
     .info
       h4.title.text-uppercase Work Experience
-
+      .card.card-nested
       ul.list-unstyled.clear-margin
-        each experience in resume.work
+        each experience, index in resume.work
           li.clearfix
             .content
-              if !experience.company
-                hr.dashed-hr
-              else
-                hr
+              if index != 0
+                if !experience.company
+                  hr.dashed-hr
+                else
+                  hr
 
               p.clear-margin.relative
                 strong= experience.position
