@@ -15,7 +15,7 @@ unless _.isEmpty(resume.skills)
                 .skill-level(data-toggle="tooltip", title=skill.level, data-placement="left")
                   .skill-progress(class=skill.skill_class)
 
-              .skill-info
+              .content(class=typeof skill.display_progress_bar === "undefined" ? "" : "skill-info")
                 strong= skill.name
 
                 unless _.isEmpty(skill.keywords)
