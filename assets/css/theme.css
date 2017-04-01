@@ -571,10 +571,12 @@ body {
 .contact-details .detail .icon {
   padding: 0 10px;
   color: #707070;
+  min-width: 2.2em;
 }
 @media (max-width: 992px) {
   .contact-details .detail .icon {
     padding: 0 5px 0 0;
+    min-width: 0px;
   }
 }
 .contact-details .detail .info {
